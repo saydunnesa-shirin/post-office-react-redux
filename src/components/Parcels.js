@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Parcels = () => {
     const dispatch = useDispatch();
-    const {isLoading, parcels, error} = useSelector((state) => state);
+    useSelector((state) => console.log(state.parcelsReducer));
+    const {isLoading, parcels, error} = useSelector((state) => state.parcelsReducer);
     
     useEffect(() => {
         dispatch(getAllParcels());

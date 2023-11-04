@@ -6,6 +6,10 @@ import NavBar from '../layout/NavBar';
 import Parcels from '../components/Parcels';
 import AddParcel from '../components/AddParcel';
 import EditParcel from '../components/EditParcel';
+import Bags from '../components/Bags';
+import AddBag from '../components/AddBag';
+import EditBag from '../components/EditBag';
+
 
 const Index = () => {
   return (
@@ -17,6 +21,10 @@ const Index = () => {
                 <Route path='/parcels' element={<Parcels></Parcels>}></Route>
                 <Route path='/add-parcel' element={<AddParcel></AddParcel>}></Route>
                 <Route path='/edit-parcel' element={<EditParcel></EditParcel>}></Route>
+
+                <Route path='/bags' element={<Bags></Bags>}></Route>
+                <Route path='/add-bag' element={<AddBag></AddBag>}></Route>
+                <Route path='/edit-bag' element={<EditBag></EditBag>}></Route>
 
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
